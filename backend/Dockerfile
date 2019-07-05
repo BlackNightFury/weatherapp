@@ -3,11 +3,10 @@ FROM node:10.16.0
 WORKDIR /usr/app
 
 COPY package*.json ./
-
 RUN npm install -qy
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 9000
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
